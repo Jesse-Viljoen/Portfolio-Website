@@ -181,7 +181,7 @@ Pacman.Ghost = function (game, map, colour) {
 
     /* Collision detection(walls) is done when a ghost lands on an
      * exact block, make sure they don't skip over it.
-     */
+      /*
     function addBounded(x1, x2) {
         var rem    = x1 % 10,
             result = rem + x2;
@@ -192,7 +192,9 @@ Pacman.Ghost = function (game, map, colour) {
         }
         return x1 + x2;
     };
-
+    
+   /*below are the functionally methods contains the return variable when the ghost is being eaten by pac - man./*
+   
     function isVunerable() {
         return eatable !== null;
     };
